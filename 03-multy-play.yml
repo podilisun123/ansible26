@@ -1,13 +1,13 @@
 - name: print the play-1 information
   hosts: localhost
   tasks:
-    name: play-1 information
+  - name: play-1 information
     ansible.builtin.debug:
       msg: "play-1 tassks here"
 
 - name: print the play-2 information
   hosts: localhost
   tasks: 
-    name: play-2 information
+  - name: play-2 information
     ansible.builtin.debug:
       msg: "play-2 tassks here"
