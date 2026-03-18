@@ -4,10 +4,9 @@
   tasks:
   - name: install multiple packages
     ansible.builtin.dnf:
-    with_items:
-      - " {{ item.name }} "
-      - " {{ item.state }} "
+      name: " {{ item.name }} "
+      state: " {{ item.state }} "
     loop:
-    - { name: mysql,state: latest }
-    - { name: nginx,state: latest }
-    - { name: postfix,state: abscent }
+    - { name: 'mysql',state: 'latest' }
+    - { name: 'nginx',state: 'latest' }
+    - { name: 'postfix',state: 'abscent' }
