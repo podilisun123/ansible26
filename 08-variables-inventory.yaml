@@ -1,0 +1,6 @@
+- name: variables from inventory
+  hosts: localhost
+  tasks:
+  - name: print variable level information
+    ansible.builtin.debug:
+     msg: "variable access from {{level}} level"
