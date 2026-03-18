@@ -5,8 +5,8 @@
   - name: install multiple packages
     ansible.builtin.dnf:
     with_items:
-      - {{ item.name }}
-      - {{ item.state }}
+      - " {{ item.name }} "
+      - " {{ item.state }} "
     loop:
     - { name: mysql,state: latest }
     - { name: nginx,state: abscent }
