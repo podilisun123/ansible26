@@ -1,0 +1,8 @@
+- name: variable from files
+  hosts: localhost
+  vars_files:
+  - var.yaml
+  tasks:
+  - name: variable access from file info
+    ansible.builtin.debug:
+     msg: "variable access from{{Level}}"
