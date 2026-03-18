@@ -2,5 +2,7 @@
   hosts: localhost
   tasks:
   - name: print variable level information
+    vars:
+      Level: tasking
     ansible.builtin.debug:
      msg: "variable access from {{Level}} level"
