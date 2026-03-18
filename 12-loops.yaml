@@ -3,7 +3,7 @@
   tasks:
   - name: print multiple packages names
     with_items:
-    - {{ item }}
+    - "{{ item }}"
     loop:
     - Linux
     - shell script
