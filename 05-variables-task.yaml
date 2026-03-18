@@ -4,8 +4,8 @@
    level: play level
   tasks:
   - name: variable at task level
-    vars:
-      level: task level
+    # vars:
+    #   level: task level
     ansible.builtin.debug:
      msg: "variable access from {{level}}"
     
