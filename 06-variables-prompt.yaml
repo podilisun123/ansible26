@@ -1,0 +1,10 @@
+- name: variables using prompt
+  hosts: localhost
+  vars_prompt:
+    name: Country
+    prompt: enter your Country
+    private: false
+  tasks:
+  - name: Country information
+    ansible.builtin.debug:
+      msg: "your Country is {{Country}}"
