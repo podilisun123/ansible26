@@ -1,12 +1,13 @@
-- name: install and uninstall multy packages
+
+- name: install packages
   hosts: web
   become: yes
   tasks:
-  - name: install multiple packages
+  - name: install packages
     ansible.builtin.dnf:
-      name: " {{ item.name }} "
-      state: " {{ item.state }} "
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
-    - { name: 'mysql', state: 'installed' }
-    - { name: 'nginx', state: 'installed' }
-    - { name: 'postfix', state: 'installed' }
+    - { name: 'mysql', state: 'latest'} # item
+    - { name: 'nginx', state: 'absent'}
+    - { name: 'postfix', state: 'absent'}
