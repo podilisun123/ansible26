@@ -1,0 +1,10 @@
+- name: variables 
+  hosts: localhost
+  vars:
+    Course: "Devops"
+    Started: 2026
+    Time: "1 month" 
+  tasks:
+  - name: print the variable information
+    ansible.builtin.debug:
+      msg: "the course is  <<Course>> and started in <<Started>> but it will taken <<Time>>"
