@@ -4,10 +4,10 @@
    Present: from play level 
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-    name: Present
-    prompt: please give prompt level
-    private: false
+  # vars_prompt:
+  #   name: Present
+  #   prompt: please give prompt level
+  #   private: false
   tasks:
   - name: Print variable Present info
     # vars: 
@@ -20,3 +20,4 @@
      # 1.argument level
      # 2.task level
      # 3.file level
+     # 4.prompt level
