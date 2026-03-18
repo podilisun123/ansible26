@@ -1,0 +1,10 @@
+- name: print loop items
+  hosts: localhost
+  tasks:
+  - name: print multiple packages names
+    ansible.builtin.debug:
+      msg: "{{ item }}"
+    loop:
+    - Linux
+    - shell script
+    - Ansible 
