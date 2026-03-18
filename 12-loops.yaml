@@ -2,8 +2,8 @@
   hosts: localhost
   tasks:
   - name: print multiple packages names
-    ansible.builtin.debug:
-      msg: "{{ item }}"
+    with_items:
+      {{ item }}
     loop:
     - Linux
     - shell script
