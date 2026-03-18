@@ -7,4 +7,4 @@
   tasks:
   - name: print the variable information
     ansible.builtin.debug:
-      msg: "the course is  <<Course>> and started in <<Started>> but it will taken <<Time>>"
+      msg: "the course is  {{Course}} and started in {{Started}} but it will taken {{Time}}"
