@@ -10,7 +10,11 @@
     private: false
   tasks:
   - name: Print variable Present info
-    vars: 
-      Present: from task level
+    # vars: 
+    #   Present: from task level
     ansible.builtin.debug:
      msg: "printing the present from variable {{Present}}"
+
+
+
+     # 1.argument level
