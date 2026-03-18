@@ -1,0 +1,16 @@
+- name: variable preferences
+  hosts: localhost
+  vars: 
+   Present: from play level 
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+    name: Present
+    prompt: please give prompt level
+    private: false
+  tasks:
+  - name: Print variable Present info
+    vars: 
+      Present: from task level
+    ansible.builtin.debug:
+     msg: "printing the present from variable {{Present}}"
