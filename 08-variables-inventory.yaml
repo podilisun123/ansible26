@@ -3,4 +3,4 @@
   tasks:
   - name: print variable level information
     ansible.builtin.debug:
-     msg: "variable access from {{level}} level"
+     msg: "variable access from {{Level}} level"
