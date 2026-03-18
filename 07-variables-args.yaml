@@ -1,0 +1,6 @@
+- name: variables from argument level
+  hosts: localhost
+  tasks:
+  - name: print variable level
+    ansible.builtin.debug:
+     msg: "the value of variable from {{level}}"
