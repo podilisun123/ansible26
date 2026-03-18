@@ -2,8 +2,8 @@
   hosts: localhost
   vars: 
    Present: from play level 
-  vars_files:
-  - vars.yaml
+  # vars_files:
+  # - vars.yaml
   vars_prompt:
     name: Present
     prompt: please give prompt level
@@ -18,3 +18,5 @@
 
 
      # 1.argument level
+     # 2.task level
+     # 3.file level
