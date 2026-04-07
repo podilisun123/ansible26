@@ -1,0 +1,11 @@
+- name: create user
+  hosts: localhost
+  tasks:
+  - name: check whether expense user or not
+    ansible.builtin.command: id expense
+    register: user_info
+    ignore_errors: true
+  
+  - name: print the user user information
+    ansible.builtin.debug:
+      msg: " {{ user_info }}"
