@@ -12,4 +12,4 @@
   tasks:
   - name: display upper case  
     ansible.builtin.debug:
-     msg: "wishes | upper"
+     msg: "{{ wishes | upper }}"
