@@ -4,3 +4,12 @@
   - name: display default value 
     ansible.builtin.debug:
       msg: " hello {{ tool | default('ansible') }}"
+
+- name: display upper case letters
+  hosts: localhost
+  vars: 
+    wishes: "good morning"
+  tasks:
+  - name: display upper case  
+    ansible.builtin.debug:
+     msg: "wishes | upper"
